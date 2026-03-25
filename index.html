@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/src/assets/offchart-ss-conference-logo.png" type="image/x-icon">
+    <!-- <title>Future Sphere Hub</title> -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
+
+h1, h2, h3, h5, button {
+   font-family: "Montserrat", sans-serif!important;
+} 
+
+h1 { font-weight: 900; }
+h2 { font-weight: 700; }
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.hero-text h1 span{
+ font-weight: 900!important;  
+} 
+p, a, h4, li , Link {
+   font-family: "Montserrat", sans-serif!important;
+  font-weight: 400!important;
+}
+
+header ul li {
+  font-size: 1!important;
+}
+
+ /* .cta-btn:hover{
+  border: 2px solid #88CA4E;
+  color: #88CA4E
+}               */
+
+.green-label h4 {
+  font-weight: 700!important;
+}
+.green-label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.green-label:hover  {
+   display: flex;
+  flex-direction: column;
+    justify-content: start;
+  align-items: center;
+}
+.green-label p{
+  display: none;
+}
+.green-label:hover {
+  height: 220px;
+}
+.green-label-img:hover .green-label{
+   height: 230px;
+}
+.green-label:hover p{
+  padding-top: 8px;
+  display: block;
+}
+.green-label-img:hover .green-label p{ 
+  display: block;
+}
+ 
+.main-card:hover .offset-bg-box{
+  background : #FDB813!important
+}
+
+.btn-border:hover {
+ background-color: #13EC37!important;
+ border: none;
+ color: #01240F;
+}
+.btn-bg:hover{
+  background: #01240F;
+  color: white
+}
+
+@media(min-width: 1200px) {
+  .hero{
+    height: 100vh!important; 
+  }
+}
+
+@media (min-width: 992px) {
+  nav button {
+    font-size: 1.1rem;
+  }
+  .hero{
+    height: 95vh!important
+  }
+  h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+}
+
+@media (max-width: 568px) {
+   .hero{
+    height: 90vh!important;
+    /* padding-top: 20px!important; */
+  }
+  .hero-btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .content{
+     padding: 30px;
+  }
+  .edit-section {
+    flex-direction: column;
+    padding-bottom: 80px;
+    padding-left: 0!important;
+  }
+  .editP-section{ 
+    padding-bottom: 80px;
+    padding-right: 0!important;
+  }
+  .editP-content {
+     padding: 30px;
+  }
+   .edit-section .content{
+    padding: 30px;
+   }
+  .partner{
+    height: 60px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 360px) {
+  .hero {
+    height: 100vh; /* or whatever fits */
+    overflow: visible;
+  }
+
+  /* Example for text or buttons */
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  nav button {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+     .hero{
+    height: 100vh!important;
+    overflow: visible!important;
+  }
+}
+
+
+/* @media (max-width: 568px) {
+  .partner-img {
+    width: 300px;
+    height: 60px;
+  }
+} */
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+  (function (l) {
+    if (l.search[1] === "/") {
+      var decoded = l.search
+        .slice(1)
+        .split("&")
+        .map(function (s) {
+          return s.replace(/~and~/g, "&");
+        })
+        .join("?");
+
+      window.history.replaceState(
+        null,
+        null,
+        l.pathname.slice(0, -1) + decoded + l.hash
+      );
+    }
+  })(window.location);
+
+  
+</script>
+
+  </body>
+</html>
